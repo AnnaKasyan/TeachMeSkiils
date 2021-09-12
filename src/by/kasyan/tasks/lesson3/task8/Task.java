@@ -1,8 +1,8 @@
-package by.kasyan.tasks.lesson3.Task8;
+package by.kasyan.tasks.lesson3.task8;
 
 import java.util.Random;
 
-public class task8 {
+public class Task {
 
     public static final Random RANDOM = new Random();
 

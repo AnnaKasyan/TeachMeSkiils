@@ -1,4 +1,4 @@
-package by.kasyan.tasks.lesson3.Task10;
+package by.kasyan.tasks.lesson3.task10;
 
 import java.util.Random;
 import java.util.Scanner;

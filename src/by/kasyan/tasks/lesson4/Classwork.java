@@ -32,4 +32,5 @@ public class Classwork {
         }
         System.out.println("Сумма четных элементов на главной диагонале равна: " + sum);
     }
+
 }

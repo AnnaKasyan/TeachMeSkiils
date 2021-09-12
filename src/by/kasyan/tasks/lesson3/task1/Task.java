@@ -1,6 +1,6 @@
-package by.kasyan.tasks.lesson3.Task1;
+package by.kasyan.tasks.lesson3.task1;
 
-public class task1 {
+public class Task {
 
     public static void main(String[] args) {
 

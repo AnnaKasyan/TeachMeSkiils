@@ -3,7 +3,7 @@ package by.kasyan.tasks.lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
-public class classwork {
+public class Classwork {
 
     public static final Random RANDOM = new Random(10);
 
