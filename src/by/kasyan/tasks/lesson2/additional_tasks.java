@@ -38,6 +38,8 @@ public class additional_tasks {
 //        Scanner in = new Scanner(System.in);
 //        System.out.print("Введите возраст чудища: ");
 //        int N = in.nextInt();
+//        in.close();
+//
 //        if (N < 200) {
 //            for (int i = 0; i < N; i++) {
 //                head += 3;
@@ -72,6 +74,7 @@ public class additional_tasks {
 //            System.out.println("У чудища " + result2 + " голов и " + eyes + " глаз.");
 //        }
 //    }
+
 //
 //    public static void main(String[] args) {
 //        int num = 123456;
@@ -100,17 +103,23 @@ public class additional_tasks {
 //        int num = in.nextInt();
 //        int digit1;
 //        int digit2 = 10;
+//        boolean order = false;
 //        while (num != 0) {
 //            digit1 = num % 10;
 //            num /= 10;
 //            if (digit2 > digit1) {
 //                digit2 = digit1;
+//                order = true;
 //            } else {
-//                System.out.println("Цифры числа не идут в порядке возрастания");
-//                break;
+//                order = false;
 //            }
 //        }
-//        in.close();
+//        if (order == true) {
+//            System.out.println("Цифры числа идут в порядке возрастания");
+//        } else {
+//            System.out.println("Цифры числа не идут в порядке возрастания");
+//            in.close();
+//        }
 //    }
 //
 //    public static void main(String[] args) {
@@ -119,15 +128,21 @@ public class additional_tasks {
 //        int num = in.nextInt();
 //        int digit1;
 //        int digit2 = 0;
+//        boolean order = false;
 //        while (num != 0) {
 //            digit1 = num % 10;
 //            num /= 10;
 //            if (digit2 < digit1) {
 //                digit2 = digit1;
+//                order = true;
 //            } else {
-//                System.out.println("Цифры числа не идут в порядке убывания");
-//                break;
+//                order = false;
 //            }
+//        }
+//        if (order == true) {
+//            System.out.println("Цифры идут в порядке убывания");
+//        } else {
+//            System.out.println("Цифры не идут в порядке убывания");
 //        }
 //        in.close();
 //    }
@@ -203,6 +218,10 @@ public class additional_tasks {
 //            num = scn.nextInt();
 //        }
 //        for (int i = (int) Math.sqrt(num); i >= 1; i--) {
+//            if (num == 1) {
+//                System.out.println("Заданное число не является ни простым, ни составным");
+//                break;
+//            }
 //            if (num % i == 0 & i != 1) {
 //                System.out.println("Заданное число составное");
 //                break;

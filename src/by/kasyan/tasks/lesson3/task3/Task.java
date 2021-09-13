@@ -10,13 +10,13 @@ public class Task {
 
         int count = 0;
         for (int i = 0; i < 15; i++) {
-            int randomNumber = RANDOM.nextInt(99 - 0 + 1) + 0;
+            int randomNumber = RANDOM.nextInt(100);
             if (randomNumber % 2 == 0) {
-                count += 1;
+                count++;
             }
             System.out.print(randomNumber + " ");
         }
-        System.out.println(" ");
+        System.out.println();
         System.out.println("Количество четных чисел: " + count);
 
     }

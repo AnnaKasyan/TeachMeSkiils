@@ -7,22 +7,18 @@ public class Task {
 
     public static void main(String[] args) {
 
-        Integer array[] = new Integer[4];
+        int[] array = {1, 8, 3, 4};
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] = RANDOM.nextInt(10 - 0 + 1) + 0;
-            System.out.print(array[i] + " ");
-        }
-        System.out.println(" ");
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < array[i++]) {
-                System.out.println("Массив является строго возрастающей последовательностью ");
-                break;
-            } else {
-                System.out.println("Массив не является строго возрастающей последовательностью ");
-                break;
+        boolean order = false;
+        for (int i = 1; i < array.length; i++) {
+            if (array[0] < array[1] && array[1] < array[2] && array[2] < array[3]) {
+                order = true;
             }
         }
-
+        if (order) {
+            System.out.println("Массив является строго возрастающей последовательностью ");
+        } else {
+            System.out.println("Массив не является строго возрастающей последовательностью ");
+        }
     }
 }
