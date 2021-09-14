@@ -11,8 +11,7 @@ public class Task {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер квадратной матрицы: ");
-        int n;
-        n = in.nextInt();
+        int n = in.nextInt();
         in.close();
 
         System.out.println("Исходная матрица: ");
@@ -21,6 +20,14 @@ public class Task {
             for (int j = 0; j < n; j++) {
                 array[i][j] = RANDOM.nextInt(51);
                 System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println("Транспонированная матрица: ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(array[j][i] + " ");
             }
             System.out.println();
         }

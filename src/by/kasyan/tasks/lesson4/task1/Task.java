@@ -11,8 +11,7 @@ public class Task {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер квадратной матрицы: ");
-        int n;
-        n = in.nextInt();
+        int n = in.nextInt();
         in.close();
 
         int[][] array = new int[n][n];
@@ -26,10 +25,8 @@ public class Task {
         int sum = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (i == j) {
-                    if (array[i][j] % 2 == 0) {
-                        sum += array[i][j];
-                    }
+                if (i == j && array[i][j] % 2 == 0) {
+                    sum += array[i][j];
                 }
             }
         }

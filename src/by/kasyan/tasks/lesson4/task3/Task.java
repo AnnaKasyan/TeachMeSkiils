@@ -11,8 +11,7 @@ public class Task {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер квадратной матрицы: ");
-        int n;
-        n = in.nextInt();
+        int n = in.nextInt();
         in.close();
 
         int[][] array = new int[n][n];
@@ -24,25 +23,25 @@ public class Task {
             System.out.println();
         }
 
-        int product_main_diagonal = 1;
-        int product_secondary_diagonal = 1;
+        int productMainDiagonal = 1;
+        int productSecondaryDiagonal = 1;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i == j) {
-                    product_main_diagonal *= array[i][j];
+                    productMainDiagonal *= array[i][j];
                 }
             }
             for (int j = n - 1 - i; j >= 0; j--) {
-                product_secondary_diagonal *= array[i][j];
+                productSecondaryDiagonal *= array[i][j];
                 break;
             }
         }
-        System.out.println("Прозведение элементов главной диагонали: " + product_main_diagonal);
-        System.out.println("Произведение элементов побочной диагонали: " + product_secondary_diagonal);
+        System.out.println("Прозведение элементов главной диагонали: " + productMainDiagonal);
+        System.out.println("Произведение элементов побочной диагонали: " + productSecondaryDiagonal);
 
-        if (product_main_diagonal > product_secondary_diagonal) {
+        if (productMainDiagonal > productSecondaryDiagonal) {
             System.out.println("Произведение элементов главной диагонали больше");
-        } else if (product_main_diagonal < product_secondary_diagonal) {
+        } else if (productMainDiagonal < productSecondaryDiagonal) {
             System.out.println("Произведение элементов побочной диагонали больше");
         } else {
             System.out.println("Произведение элементов главной диагонали равно произведению побочной диагонали");

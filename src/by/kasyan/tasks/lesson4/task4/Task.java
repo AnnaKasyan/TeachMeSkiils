@@ -11,8 +11,7 @@ public class Task {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер квадратной матрицы: ");
-        int n;
-        n = in.nextInt();
+        int n = in.nextInt();
         in.close();
 
         int[][] array = new int[n][n];

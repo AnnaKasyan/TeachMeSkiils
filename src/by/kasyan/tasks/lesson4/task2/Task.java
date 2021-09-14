@@ -11,8 +11,7 @@ public class Task {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Введите размер квадратной матрицы: ");
-        int n;
-        n = in.nextInt();
+        int n = in.nextInt();
         in.close();
 
         int[][] array = new int[n][n];
@@ -23,16 +22,16 @@ public class Task {
             }
             System.out.println();
         }
-        int sum = 0;
+        System.out.println();
+        System.out.println("Нечетные элементы, находящихся под главной диагональю включительно: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (i > j ^ i == j) {
+                if (i > j || i == j) {
                     if (array[i][j] % 2 == 1) {
-                        sum += array[i][j];
+                        System.out.print(array[i][j] + " ");
                     }
                 }
             }
         }
-        System.out.println("Сумма нечетных элементов, находящихся под главной диагональю включительно, равна: " + sum);
     }
 }
