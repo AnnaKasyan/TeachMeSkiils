@@ -1,1 +1,1 @@
-# TeachMeSkiils
+# TeachMeSkills
