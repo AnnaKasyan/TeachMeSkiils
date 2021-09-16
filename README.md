@@ -1,1 +1,1 @@
-# TeachMeSkiilsGitExample
+# TeachMeSkills
