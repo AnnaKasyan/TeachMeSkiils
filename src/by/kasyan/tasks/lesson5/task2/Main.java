@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Phone first = new Phone(1248574, "Samsung", 192, "Mark");
-        Phone second = new Phone(8961152, "iPhone", 186, "Mary");
-        Phone third = new Phone(3548957, "Huawei", 200, "Tom");
+        Phone first = new Phone("1248574", "Samsung", 192, "Mark");
+        Phone second = new Phone("8961152", "iPhone", 186, "Mary");
+        Phone third = new Phone("3548957", "Huawei", 200, "Tom");
 
         first.displayInfo();
         second.displayInfo();
@@ -23,8 +23,8 @@ public class Main {
 
         System.out.println("----------------");
 
-        Phone fourth = new Phone(7581265, "Xiaomi", 195);
-        Phone fifth = new Phone(4521100, "Honor");
+        Phone fourth = new Phone("7581265", "Xiaomi", 195);
+        Phone fifth = new Phone("4521100", "Honor");
         Phone sixth = new Phone();
 
         fourth.displayInform();
@@ -32,6 +32,7 @@ public class Main {
         sixth.displayInform();
 
         System.out.println("----------------");
+
 
     }
 }

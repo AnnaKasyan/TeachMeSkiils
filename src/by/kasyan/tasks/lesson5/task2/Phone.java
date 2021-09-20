@@ -1,20 +1,20 @@
 package by.kasyan.tasks.lesson5.task2;
 
 public class Phone {
-    int number;
-    String model;
-    int weight;
-    String name;
+    private String number;
+    private String model;
+    private int weight;
+    private String name;
 
-    public Phone(int n, String m, int w, String name) {
-        number = n;
-        model = m;
-        weight = w;
+    public Phone(String num, String model, int weight, String name) {
+        number = num;
+        this.model = model;
+        this.weight = weight;
         this.name = name;
     }
 
     void displayInfo() {
-        System.out.printf("Number: %d \tModel: %s \tWeight: %d\n", number, model, weight);
+        System.out.printf("Number: %s \tModel: %s \tWeight: %d\n", number, model, weight);
     }
 
     public void receiveCall() {
@@ -25,35 +25,31 @@ public class Phone {
         System.out.println("    " + number);
     }
 
-    public Phone(int num, String m, int w) {
+    public Phone(String num, String model, int weight) {
+        this(num, model);
         number = num;
-        model = m;
-        weight = w;
+        this.model = model;
+        this.weight = weight;
         name = "Undefined";
     }
 
-    public Phone(int num, String m) {
+    public Phone(String num, String model) {
         number = num;
-        model = m;
-        weight = 0;
+        this.model = model;
         name = "Undefined";
     }
 
     public Phone() {
-        number = 0;
-        model = "Undefined";
-        weight = 0;
         name = "Undefined";
     }
 
     void displayInform() {
-        System.out.printf("Number: %d \tModel: %s \tWeight: %d \tName: %s\n", number, model, weight, name);
+        System.out.printf("Number: %s \tModel: %s \tWeight: %d \tName: %s\n", number, model, weight, name);
     }
 
-    public void sendMessage(int... nums) {
+    static void sendMessage(String... nums) {
         System.out.println("Message sent: ");
-        for (int number :
-                nums) {
+        for (String number : nums) {
             System.out.println(number);
         }
         System.out.println();

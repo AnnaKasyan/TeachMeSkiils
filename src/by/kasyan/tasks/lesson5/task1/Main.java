@@ -17,6 +17,7 @@ public class Main {
             firstNumber = in.nextInt();
         } else {
             System.out.println("Invalid input");
+            return;
         }
         System.out.println("Second number: ");
         int secondNumber = 0;
@@ -24,6 +25,7 @@ public class Main {
             secondNumber = in.nextInt();
         } else {
             System.out.println("Invalid input");
+            return;
         }
         System.out.println("Input operation:");
         String operation = in.next();

@@ -15,7 +15,7 @@ public class Classwork {
         int mass[][] = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                mass[i][j] = RANDOM.nextInt(50 - 0 + 1) + 0;
+                mass[i][j] = RANDOM.nextInt(51);
                 System.out.print(mass[i][j] + " ");
             }
             System.out.println();
@@ -31,6 +31,6 @@ public class Classwork {
             }
         }
         System.out.println("Сумма четных элементов на главной диагонале равна: " + sum);
+        in.close();
     }
-
 }
