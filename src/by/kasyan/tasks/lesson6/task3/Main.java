@@ -5,16 +5,8 @@ public class Main {
 
         Spaceport spaceport = new Spaceport();
         Shuttle shuttle = new Shuttle();
-        SpaceX spaceX = new SpaceX();
 
-        spaceport.test();
-        spaceport.engineStart();
-        shuttle.start();
+        spaceport.launch(shuttle);
 
-        System.out.println("----------------------------");
-
-        spaceX.test();
-        spaceX.engineStart();
-        shuttle.start();
     }
 }

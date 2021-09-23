@@ -11,15 +11,15 @@ public class Run {
         Среди 3-х роботов найдите самого дорогого.
         */
 
-        SamsungHand samsungHand = new SamsungHand(50);
-        SamsungHead samsungHead = new SamsungHead(80);
-        SamsungLeg samsungLeg = new SamsungLeg(40);
-        SonyHand sonyHand = new SonyHand(70);
-        SonyHead sonyHead = new SonyHead(100);
-        SonyLeg sonyLeg = new SonyLeg(60);
-        ToshibaHand toshibaHand = new ToshibaHand(60);
-        ToshibaHead toshibaHead = new ToshibaHead(90);
-        ToshibaLeg toshibaLeg = new ToshibaLeg(70);
+        IHand samsungHand = new SamsungHand(50);
+        IHead samsungHead = new SamsungHead(80);
+        ILeg samsungLeg = new SamsungLeg(40);
+        IHand sonyHand = new SonyHand(70);
+        IHead sonyHead = new SonyHead(100);
+        ILeg sonyLeg = new SonyLeg(60);
+        IHand toshibaHand = new ToshibaHand(60);
+        IHead toshibaHead = new ToshibaHead(90);
+        ILeg toshibaLeg = new ToshibaLeg(70);
         Robot firstRobot = new Robot(samsungHand, sonyHead, toshibaLeg);
         Robot secondRobot = new Robot(toshibaHand, samsungHead, sonyLeg);
         Robot thirdRobot = new Robot(sonyHand, toshibaHead, samsungLeg);
@@ -36,11 +36,9 @@ public class Run {
 
         if (firstCoat > secondCoat && firstCoat > thirdCoat) {
             System.out.println("Самый дорогой первый робот");
-        }
-        if (secondCoat > firstCoat && secondCoat > thirdCoat) {
+        } else if (secondCoat > firstCoat && secondCoat > thirdCoat) {
             System.out.println("Самый дорогой второй робот");
-        }
-        if (thirdCoat > firstCoat && thirdCoat > secondRobot.getPrice()) {
+        } else {
             System.out.println("Самый дорогой третий робот");
         }
     }
