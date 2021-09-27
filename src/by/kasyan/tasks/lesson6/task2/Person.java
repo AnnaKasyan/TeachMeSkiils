@@ -1,11 +1,11 @@
 package by.kasyan.tasks.lesson6.task2;
 
-public class Person implements IPerson {
+public class Person implements Jacket, Pants, Shoes {
 
-    private String name;
-    private Jacket jacket;
-    private Shoes shoes;
-    private Pants pants;
+    private final String name;
+    private final Jacket jacket;
+    private final Shoes shoes;
+    private final Pants pants;
 
     public Person(String name, Jacket jacket, Shoes shoes, Pants pants) {
         this.name = name;

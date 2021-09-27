@@ -4,18 +4,14 @@ import java.util.Random;
 
 public class Shuttle implements IStart {
 
-    public static final Random random = new Random();
+    private static final Random RANDOM = new Random();
 
-    private boolean test = false;
 
     @Override
     public boolean test() {
-        int password = random.nextInt(11);
+        int password = RANDOM.nextInt(11);
         System.out.println("Password: " + password);
-        if (password > 3) {
-            test = true;
-        }
-        return true;
+        return password > 3;
     }
 
     @Override
