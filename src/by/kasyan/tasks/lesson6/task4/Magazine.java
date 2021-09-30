@@ -2,7 +2,7 @@ package by.kasyan.tasks.lesson6.task4;
 
 public class Magazine implements Printable {
 
-    final private String name;
+   private final String name;
 
     public Magazine(String name) {
         this.name = name;
